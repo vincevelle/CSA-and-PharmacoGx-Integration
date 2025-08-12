@@ -31,3 +31,8 @@ pip install -r requirements.txt
 To reproduce results, start by downloading the data using the scripts provided in ./data_download. This will download PharmacoDB datasets into a directory of CSV files. You may then use the scripts in ./data_features/drug_features to generate molecular features, the scripts in ./data_features/drug_response_curves to fit response curves and compute AUCs, and the scripts in ./data_formatting to convert the raw omics data into CSA units and formatting. 
 
 
+## References
+1. https://github.com/JDACS4C-IMPROVE
+2. Smirnov, Petr, et al. "PharmacoDB: an integrative database for mining in vitro anticancer drug screening studies." Nucleic Acids Research (2017).
+3. Smirnov, Petr, et al. "PharmacoGx: an R package for analysis of large pharmacogenomic datasets." Bioinformatics 32.8 (2015): 1244-1246.
+4. Cross-Study Analysis: https://arxiv.org/abs/2503.14356v1
