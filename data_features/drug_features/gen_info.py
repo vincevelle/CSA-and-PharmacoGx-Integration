@@ -1,20 +1,23 @@
 import pandas as pd
-import requests
-import time
+import pubchempy as pcp
 from tqdm import tqdm
 
 # Load the TSV file
 df = pd.read_csv("/homes/hsuleman/PharmacoGx/analysis/scripts/drug_SMILES_noSalt.tsv", sep="\t")
 
+failed_smiles = []  # Store SMILES with no CID found
+
 def get_pubchem_cid(smiles):
-    """Get the PubChem CID for a given SMILES string."""
-    url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/smiles/{smiles}/cids/TXT"
+    """Get the PubChem CID for a given SMILES string using PubChemPy."""
     try:
-        response = requests.get(url)
-        if response.status_code == 200:
-            return response.text.strip()
+        compounds = pcp.get_compounds(smiles, namespace='smiles')
+        if compounds:
+            return compounds[0].cid
+        else:
+            failed_smiles.append(smiles)
     except Exception as e:
         print(f"Error with SMILES {smiles}: {e}")
+        failed_smiles.append(smiles)
     return None
 
 # Fetch PubChem IDs
@@ -26,5 +29,13 @@ for smiles in tqdm(df["canSMILES"], desc="Fetching PubChem IDs"):
 # Add the new column
 df["PubChem_ID"] = pubchem_ids
 
-# Save the result to a new TSV file
+# Save the result
 df.to_csv("with_pubchem_ids_noSalt.tsv", sep="\t", index=False)
+
+# Save failed SMILES to a separate file
+if failed_smiles:
+    pd.Series(failed_smiles).to_csv("failed_smiles.tsv", sep="\t", index=False, header=["SMILES"])
+    print(f"{len(failed_smiles)} SMILES could not be resolved. Saved to failed_smiles.tsv")
+else:
+    print("All SMILES resolved successfully!")
+
