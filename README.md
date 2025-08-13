@@ -28,7 +28,7 @@ pip install -r requirements.txt
 ---
 
 ## 🔄 Workflow
-To reproduce results, start by downloading the data using the scripts provided in ./data_download. This will download PharmacoDB datasets into a directory of CSV files. You may then use the scripts in ./data_features/drug_features to generate molecular features, the scripts in ./data_features/drug_response_curves to fit response curves and compute AUCs, and the scripts in ./data_formatting to convert the raw omics data into CSA units and formatting. 
+To reproduce results, start by downloading the data using the scripts provided in ./data_retrieval. This will download PharmacoDB datasets into a directory of CSV files. You may then use the scripts in ./data_features/drug_features to generate molecular features, the scripts in ./data_features/drug_response_curves to fit response curves and compute AUCs, and the scripts in ./data_formatting to convert the raw omics data into CSA units and formatting. 
 
 
 ## References
