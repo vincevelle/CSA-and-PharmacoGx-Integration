@@ -3,6 +3,8 @@
 ## 📄 Project Overview
 This repository extends the cross-study analysis (CSA) dataset used in the *Drug Response Model Benchmarking* paper (https://arxiv.org/abs/2503.14356v1) by retrieving additional pharmacogenomic data from **PharmacoDB** using the **PharmacoGx** R package. The goal is to align and enrich these datasets to meet the **IMPROVE framework** requirements for running drug response prediction models.
 
+For further information about the processing of multiomics data, see https://github.com/zhuyitan/Data_curation?tab=readme-ov-file 
+
 ---
 
 ## 📂 Repository Structure
