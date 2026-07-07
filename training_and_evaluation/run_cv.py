@@ -2,7 +2,7 @@ import configparser
 import subprocess
 
 # Load param template
-param_file = "/homes/hsuleman/UNO/uno_default_model.txt"  # replace with your param filename
+param_file = "uno_default_model.txt"  # replace with your param filename
 config = configparser.ConfigParser()
 config.read(param_file)
 
