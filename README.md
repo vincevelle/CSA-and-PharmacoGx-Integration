@@ -9,9 +9,10 @@ For further information about the processing of multiomics data, see https://git
 
 ## 📂 Repository Structure
 1. **data_retrieval** – Download datasets from PharmacoDB via PharmacoGx.
-2. **data_formatting** – Harmonize units, collect metadata, and restructure for IMPROVE compatibility.
+2. **data_formatting** – Harmonize units, collect metadata, and restructure omics data for IMPROVE compatibility.
 3. **data_features** – Compute molecular descriptors, fingerprints, and dose–response metrics.
 4. **data_analysis** – Summarize and visualize data distributions and characteristics.
+5. **training_and_evaluation** – Scripts for generating cross-validation splits, training models, and computing performance metrics
 
 Further details about the scripts for each folder can be found in that folder's README
 
