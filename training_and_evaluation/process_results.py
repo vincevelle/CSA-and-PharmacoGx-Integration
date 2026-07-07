@@ -74,7 +74,7 @@ for fold_dir in sorted(SPLITS_DIR.glob("fold_*")):
     # -----------------------------
     # Load predictions
     # -----------------------------
-    pred_path = fold_dir / "test_y_data_predicted_filtered.csv"
+    pred_path = fold_dir / "test_y_data_predicted.csv"
     df = pd.read_csv(pred_path)
     df["auc_true"] = df["auc_true"].round(4)
 
