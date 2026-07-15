@@ -1,7 +1,7 @@
 # CSA Dataset Expansion via PharmacoGx
 
 ## 📄 Project Overview
-This repository extends the cross-study analysis (CSA) dataset used in the *Drug Response Model Benchmarking* paper (https://arxiv.org/abs/2503.14356v1) by retrieving additional pharmacogenomic data from **PharmacoDB** using the **PharmacoGx** R package. The goal is to align and enrich these datasets to meet the **IMPROVE framework** requirements for running drug response prediction models.
+This repository extends the cross-study analysis (CSA) dataset used in the *Drug Response Model Benchmarking* paper (https://doi.org/10.1093/bib/bbaf667) by retrieving additional pharmacogenomic data from **PharmacoDB** using the **PharmacoGx** R package. The goal is to align and enrich these datasets to meet the **IMPROVE framework** requirements for running drug response prediction models.
 
 For further information about the processing of multiomics data, see https://github.com/zhuyitan/Data_curation?tab=readme-ov-file 
 
@@ -38,4 +38,4 @@ To reproduce results, start by downloading the data using the scripts provided i
 1. https://github.com/JDACS4C-IMPROVE
 2. Smirnov, Petr, et al. "PharmacoDB: an integrative database for mining in vitro anticancer drug screening studies." Nucleic Acids Research (2017).
 3. Smirnov, Petr, et al. "PharmacoGx: an R package for analysis of large pharmacogenomic datasets." Bioinformatics 32.8 (2015): 1244-1246.
-4. Cross-Study Analysis: https://arxiv.org/abs/2503.14356v1
+4. A. Partin, P. Vasanthakumari, O. Narykov, A. Wilke, N. Koussa, S.E. Jones, Y. Zhu, J.C. Overbeek, R. Jain, G.D. Fernando, C. Sanchez-Villalobos, C. Garcia-Cardona, J. Mohd-Yusof, N. Chia, J.M. Wozniak, S. Ghosh, R. Pal, T.S. Brettin, M.R. Weil, R.L. Stevens, Benchmarking community drug response prediction models: datasets, models, tools, and metrics for cross-dataset generalization analysis, Briefings in Bioinformatics, Volume 27, Issue 1, January 2026, https://doi.org/10.1093/bib/bbaf667 
