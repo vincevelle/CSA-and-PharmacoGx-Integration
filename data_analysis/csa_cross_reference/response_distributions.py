@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load TSV file
-file_path = '/homes/hsuleman/PharmacoGx/analysis/scripts/dose_response_output_FULL/final_responses/pgx_response.tsv'  # <-- Replace with file to analyze
+file_path = 'pgx_response.tsv'  # <-- Replace with file to analyze
 df = pd.read_csv(file_path, sep='\t')
 
 # Summary statistics for all AUC values
@@ -40,7 +40,7 @@ plt.ylabel('Frequency')
 plt.grid(True)
 plt.tight_layout()
 
-histogram_path = '/homes/hsuleman/PharmacoGx/analysis/auc__full_corrected2'
+histogram_path = 'PharmacoGx/analysis/auc'
 plt.savefig(histogram_path)
 print(f"Histogram saved as: {histogram_path}")
 
