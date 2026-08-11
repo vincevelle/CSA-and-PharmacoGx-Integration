@@ -4,8 +4,8 @@ from scipy.stats import pearsonr, spearmanr
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 
 # === CONFIG ===
-file1 = "/homes/hsuleman/PharmacoGx/analysis/scripts/labeled_response.tsv"
-file2 = "/homes/hsuleman/PharmacoGx/analysis/scripts/dose_response_output_FULL/final_responses/pgx_response.tsv"
+file1 = "labeled_response.tsv"
+file2 = "pgx_response.tsv"
 output_matches = "overlapping_experiments.tsv"
 
 source_map = {
