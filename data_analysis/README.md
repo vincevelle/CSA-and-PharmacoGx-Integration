@@ -5,7 +5,7 @@ Scripts for visualizing data distributions, calculating summary statistics, and 
 ## 📂 Repository Structure
 
 1. **viability_histograms.py** 
-- Loops through the directory of PharmacoDB data, extracts raw viabilities, and plots a histogram contained to the range [0, 200]. Any data outside this range is saved to a separate log file. Find the folder of histograms on lambda7 at /homes/hsuleman/PharmacoGx/data_analysis/viability_histograms
+- Loops through the directory of PharmacoDB data, extracts raw viabilities, and plots a histogram contained to the range [0, 200]. Any data outside this range is saved to a separate log file. 
 2. **avg_viabilities.py** 
 - Calculates the average raw viability values for experiments where the AUC was computed to be > 1. The goal is to find rare cases where the computed AUC is high but the treatment may actually be effective.
 
