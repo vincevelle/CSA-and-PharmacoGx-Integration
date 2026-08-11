@@ -17,5 +17,3 @@
 7. NCI60
 8. PRISM
 9. PDTX
-
-Find the full folder of downloaded datasets on lambda7 at /homes/hsuleman/PharmacoGx/PharmacoSet_Exports
