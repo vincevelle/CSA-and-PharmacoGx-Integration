@@ -3,7 +3,7 @@ import pubchempy as pcp
 from tqdm import tqdm
 
 # Load the TSV file
-df = pd.read_csv("/homes/hsuleman/PharmacoGx/analysis/scripts/drug_SMILES_noSalt.tsv", sep="\t")
+df = pd.read_csv("drug_SMILES_noSalt.tsv", sep="\t")
 
 failed_smiles = []  # Store SMILES with no CID found
 
