@@ -24,8 +24,5 @@ param_bound = ([0, -19, -5, 1], [1, 5, 5, 1 + 1e-6]) is initially used, but may 
 - Note that raw viabilities are truncated to the range (0,200) prior to curve fitting, this is due to the presence of extreme outliers in some of the datasets (NCI60, for example, has some viabilities over 500). The doses are initially in micromolar (see example plots on https://pharmacodb.ca/), so they are converted to molar for compatibility with drug_response_curve.py
 
 
-Find the full folder of drug features on lambda7 at /homes/hsuleman/PharmacoGx/pgx_drug_features
-
-Find the full folder of computed response metrics on lambda7 at /homes/hsuleman/PharmacoGx/pgx_drug_response
 
 
