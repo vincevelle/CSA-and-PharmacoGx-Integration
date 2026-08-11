@@ -1,16 +1,16 @@
 import pandas as pd
 
 # Load the drug response data
-drug_response_df = pd.read_csv("/homes/hsuleman/PharmacoGx/analysis/crown_csa_data/response.tsv", sep="\t")
+drug_response_df = pd.read_csv("response.tsv", sep="\t")
 
 # Load the chem ID mapping file
-chem_map_df = pd.read_csv("/homes/hsuleman/PharmacoGx/analysis/crown_csa_data/duplicates_removed.tsv", sep="\t")  # columns: improve_chem_id, canSMILES, PubChem_ID
+chem_map_df = pd.read_csv("duplicates_removed.tsv", sep="\t")  # columns: improve_chem_id, canSMILES, PubChem_ID
 
 # Load the drug info file
-finalized_drugs_df = pd.read_csv("/homes/hsuleman/PharmacoGx/analysis/crown_csa_data/finalized_druginfo.tsv", sep="\t")  # columns include: improve_chem_id, canSMILES, PubChem_ID
+finalized_drugs_df = pd.read_csv("finalized_druginfo.tsv", sep="\t")  # columns include: improve_chem_id, canSMILES, PubChem_ID
 
 # Load the sample info file
-sample_info_df = pd.read_csv("/homes/hsuleman/PharmacoGx/analysis/outputs/sample_info.csv")  # columns: DepMap_ID, sample_name
+sample_info_df = pd.read_csv("sample_info.csv")  # columns: DepMap_ID, sample_name
 
 # Create lookup for finalized drug info
 canSMILES_to_final = finalized_drugs_df.set_index("canSMILES")["improve_chem_id"].to_dict()
