@@ -4,7 +4,7 @@ from rdkit import Chem
 from rdkit.Chem.SaltRemover import SaltRemover
 from tqdm import tqdm
 
-INPUT_DIR = "/homes/hsuleman/PharmacoGx/PharmacoSet_Exports"
+INPUT_DIR = "PharmacoGx/PharmacoSet_Exports"
 OUTPUT_FILE = "drug_SMILES.tsv"
 
 # Function to clean raw SMILES strings
