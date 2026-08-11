@@ -6,7 +6,7 @@ from rdkit.DataStructs import ConvertToNumpyArray
 import numpy as np
 
 # Load the file with canonical SMILES
-df = pd.read_csv("/homes/hsuleman/PharmacoGx/analysis/scripts/drug_SMILES_noSalt.tsv", sep="\t")
+df = pd.read_csv("drug_SMILES_noSalt.tsv", sep="\t")
 
 # Create a Morgan fingerprint generator (radius=2 = ECFP4, 512 bits)
 generator = GetMorganGenerator(radius=2, fpSize=512)
