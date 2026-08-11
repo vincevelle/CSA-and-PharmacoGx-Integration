@@ -1,8 +1,8 @@
 import pandas as pd
 
 # Load both TSV files
-file1 = pd.read_csv('/homes/hsuleman/PharmacoGx/analysis/scripts/with_pubchem_ids_noSalt.tsv', sep='\t')
-file2 = pd.read_csv('/homes/hsuleman/PharmacoGx/analysis/crown_csa_data/drug_info.tsv', sep='\t')
+file1 = pd.read_csv('with_pubchem_ids_noSalt.tsv', sep='\t')
+file2 = pd.read_csv('drug_info.tsv', sep='\t')
 
 # Standardize column names for matching
 file1 = file1.rename(columns={
@@ -42,8 +42,8 @@ file1 = file1[file2.columns]
 combined = pd.concat([file1, file2_filtered], ignore_index=True)
 
 # Save outputs
-combined.to_csv('/homes/hsuleman/PharmacoGx/analysis/crown_csa_data/finalized_druginfo.tsv', sep='\t', index=False)
-duplicates.to_csv('/homes/hsuleman/PharmacoGx/analysis/crown_csa_data/duplicates_removed.tsv', sep='\t', index=False)
+combined.to_csv('finalized_druginfo.tsv', sep='\t', index=False)
+duplicates.to_csv('duplicates_removed.tsv', sep='\t', index=False)
 
 print("Files merged successfully into 'finalized_druginfo.tsv'")
 print("Removed duplicates saved to 'duplicates_removed.tsv'")
