@@ -7,7 +7,7 @@ from tqdm import tqdm
 from drug_response_curve import drug_screening_dataframe
 
 # === Settings ===
-DATA_DIR = "/homes/hsuleman/PharmacoGx/PharmacoSet_Exports"   # Folder with PharmacoGx data saved as CSVs
+DATA_DIR = "PharmacoGx/PharmacoSet_Exports"   # Folder with PharmacoGx data saved as CSVs
 OUT_DIR = "./dose_response_output_FULL"
 
 SELECTED_DATASETS = [
