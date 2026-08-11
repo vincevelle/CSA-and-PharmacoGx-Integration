@@ -4,9 +4,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # === INPUTS ===
-RAW_DATA_DIR = "/homes/hsuleman/PharmacoGx/PharmacoSet_Exports"
-AUC_FILE = "/homes/hsuleman/PharmacoGx/analysis/crown_csa_data/pgx_data_uno/y_data/response.tsv"  # path to AUC file
-OUTPUT_FILE = "avg_viability_for_auc_gt1.tsv"
+RAW_DATA_DIR = "PharmacoGx/PharmacoSet_Exports"
+AUC_FILE = "response.tsv"  # path to AUC file
+OUTPUT_FILE = "avg_viability_for_auc.tsv"
 
 # === STEP 1: Load AUC results ===
 auc_df = pd.read_csv(AUC_FILE, sep="\t")
