@@ -6,7 +6,7 @@ import multiprocessing as mp
 import csv
 
 # Load canonical SMILES
-smiles_df = pd.read_csv("/homes/hsuleman/PharmacoGx/analysis/scripts/drug_SMILES_noSalt.tsv", sep="\t")
+smiles_df = pd.read_csv("drug_SMILES_noSalt.tsv", sep="\t")
 smiles_df = smiles_df.dropna(subset=["canSMILES"])
 
 # Prepare Mordred calculator
