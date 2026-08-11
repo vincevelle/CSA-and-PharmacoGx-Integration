@@ -5,8 +5,8 @@ from pathlib import Path
 # -----------------------------
 # File paths
 # -----------------------------
-input_folder = Path("/homes/hsuleman/PharmacoSet_Exports3/gene_expr")
-gene_info_csv = Path("/homes/hsuleman/PharmacoGx/analysis/outputs/gene_info.csv")
+input_folder = Path("gene_expr")
+gene_info_csv = Path("gene_info.csv")
 
 # -----------------------------
 # Load gene info mapping
