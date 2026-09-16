@@ -7,8 +7,7 @@ For further information about the processing of multiomics data, see https://git
 
 You can find the expanded dataset here : https://figshare.com/articles/dataset/AI-Ready_Drug_Response_Dataset/31130641
 
-Please cite this paper when using the expanded dataset : https://doi.org/10.48550/arXiv.2608.11444
-
+Please cite this paper when using the expanded dataset: https://doi.org/10.48550/arXiv.2608.11444. This paper also includes information on the methodology used to construct the dataset.
 
 ---
 
