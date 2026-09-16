@@ -5,6 +5,11 @@ This repository extends the cross-study analysis (CSA) dataset used in the *Drug
 
 For further information about the processing of multiomics data, see https://github.com/zhuyitan/Data_curation?tab=readme-ov-file 
 
+You can find the expanded dataset here : https://figshare.com/articles/dataset/AI-Ready_Drug_Response_Dataset/31130641
+
+Please cite this paper when using the expanded dataset : https://doi.org/10.48550/arXiv.2608.11444
+
+
 ---
 
 ## 📂 Repository Structure
@@ -36,6 +41,9 @@ To reproduce results, start by downloading the data using the scripts provided i
 
 ## References
 1. https://github.com/JDACS4C-IMPROVE
-2. Smirnov, Petr, et al. "PharmacoDB: an integrative database for mining in vitro anticancer drug screening studies." Nucleic Acids Research (2017).
-3. Smirnov, Petr, et al. "PharmacoGx: an R package for analysis of large pharmacogenomic datasets." Bioinformatics 32.8 (2015): 1244-1246.
-4. A. Partin, P. Vasanthakumari, O. Narykov, A. Wilke, N. Koussa, S.E. Jones, Y. Zhu, J.C. Overbeek, R. Jain, G.D. Fernando, C. Sanchez-Villalobos, C. Garcia-Cardona, J. Mohd-Yusof, N. Chia, J.M. Wozniak, S. Ghosh, R. Pal, T.S. Brettin, M.R. Weil, R.L. Stevens, Benchmarking community drug response prediction models: datasets, models, tools, and metrics for cross-dataset generalization analysis, Briefings in Bioinformatics, Volume 27, Issue 1, January 2026, https://doi.org/10.1093/bib/bbaf667 
+2. Vincent Lavelle, Yitan Zhu, Kaitlyn Marlor, Thomas Brettin, Rick Stevens, "Large-scale AI-Ready Data for Anticancer Drug Response Modeling", https://doi.org/10.48550/arXiv.2608.11444
+3. Smirnov, Petr, et al. "PharmacoDB: an integrative database for mining in vitro anticancer drug screening studies." Nucleic Acids Research (2017).
+4. Smirnov, Petr, et al. "PharmacoGx: an R package for analysis of large pharmacogenomic datasets." Bioinformatics 32.8 (2015): 1244-1246.
+5. A. Partin, P. Vasanthakumari, O. Narykov, A. Wilke, N. Koussa, S.E. Jones, Y. Zhu, J.C. Overbeek, R. Jain, G.D. Fernando, C. Sanchez-Villalobos, C. Garcia-Cardona, J. Mohd-Yusof, N. Chia, J.M. Wozniak, S. Ghosh, R. Pal, T.S. Brettin, M.R. Weil, R.L. Stevens, Benchmarking community drug response prediction models: datasets, models, tools, and metrics for cross-dataset generalization analysis, Briefings in Bioinformatics, Volume 27, Issue 1, January 2026, https://doi.org/10.1093/bib/bbaf667
+
+A complete list of references can be found in the accompanying paper: https://doi.org/10.48550/arXiv.2608.11444
